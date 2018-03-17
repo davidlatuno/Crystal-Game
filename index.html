@@ -7,45 +7,93 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Crystal Collector</title>
 </head>
 
 <body>
 
-    <h1>Crystal Collector</h1>
-    <div>Target Number:
-
-        <div id="targetNumber"></div>
-
+    <div class="jumbotron text-center">
+        <h1>Crystal Collector</h1>
     </div>
 
-    <div>Your Current Number:
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Target Number:</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <div id="targetNumber"></div>
+                </div>
+            </div>
+        </div>
 
-        <div id="userNumber">0</div>
-
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Your Current Number:</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <div id="userNumber">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2"></div>
     </div>
 
-    <div>Wins:
+    <!-- Row 2 -->
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Wins</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <div id="wins">0</div>
+                </div>
+            </div>
+        </div>
 
-        <div id="wins">0</div>
-
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Losses:</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <div id="lose">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2"></div>
     </div>
 
-    <div>Losses:
+    <!-- Row 3 -->
 
-        <div id="lose">0</div>
-
-    </div>
-
-    <div> Your Crystals
-
-        <br>
-
-        <img class="image blue" src="assets/images/bluecrystal.jpg" alt="blue">
-        <img class="image green" src="assets/images/green crystal.png" alt="green">
-        <img class="image red" src="assets/images/redcrystal.jpeg" alt="red">
-        <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-md-8 text-center">
+            <button class="btn btn-primary blue" value="7">
+                    <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+            </button>
+            <button class="btn btn-success green" value="8">
+                    <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+            </button>
+            <button class="btn btn-danger red" value="9">
+                    <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+            </button>
+            <button class="btn btn-warning yellow" value="times">
+                    <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+                </div>
+            </button>
+        </div>
     </div>
 
 

@@ -34,7 +34,7 @@ function crystalValue() {
     $(".blue").attr("data-crystalvalue", crystalRandom[0]);
     $(".green").attr("data-crystalvalue", crystalRandom[1]);
     $(".red").attr("data-crystalvalue", crystalRandom[2]);
-    $(".white").attr("data-crystalvalue", crystalRandom[3]);
+    $(".yellow").attr("data-crystalvalue", crystalRandom[3]);
 
 }
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
 
 
     // addes crystal values to user total
-    $(".image").on("click", function () {
+    $(".btn").on("click", function () {
 
         crystalNumber = ($(this).attr("data-crystalvalue"))
 
