@@ -10,13 +10,15 @@ var crystalRandom = [];
 
 var crystalNumber;
 
+
+// Creates random number for target and crystals
 function randomNum() {
 
     targetNum = Math.floor(Math.random() * 102) + 19;
 
     $("#targetNumber").text(targetNum);
 
-    for(var i = 0; i < 4; i++) {
+    for (var i = 0; i < 4; i++) {
 
         var randomCrystalNumber = Math.floor(Math.random() * 12) + 1;
 
@@ -26,12 +28,37 @@ function randomNum() {
 
 }
 
+// addes value attribute to the crystals
 function crystalValue() {
 
     $(".blue").attr("data-crystalvalue", crystalRandom[0]);
     $(".green").attr("data-crystalvalue", crystalRandom[1]);
     $(".red").attr("data-crystalvalue", crystalRandom[2]);
     $(".white").attr("data-crystalvalue", crystalRandom[3]);
+
+}
+
+function updateScore() {
+
+    $("#wins").text(wins);
+    $("#lose").text(lose);
+
+
+}
+
+
+// on win or lose reset values and html
+function reset() {
+
+    crystalRandom.splice(0, crystalRandom.length);
+
+    randomNum();
+
+    crystalValue();
+
+    userNum = 0;
+
+    $("#userNumber").text(userNum);
 
 }
 
@@ -42,6 +69,8 @@ crystalValue();
 
 $(document).ready(function () {
 
+
+    // addes crystal values to user total
     $(".image").on("click", function () {
 
         crystalNumber = ($(this).attr("data-crystalvalue"))
@@ -53,10 +82,23 @@ $(document).ready(function () {
         $("#userNumber").text(userNum);
 
 
+        if (userNum === targetNum) {
+
+            wins++;
+
+            reset();
+
+        } else if (userNum > targetNum) {
+
+
+            lose++;
+
+            reset();
+
+        }
+
+
+        updateScore();
+
     })
-
-
-
-
-
 })
