@@ -2,19 +2,23 @@ var targetNum = 0;
 
 var userNum = 0;
 
+var wins = 0;
+
+var lose = 0;
+
 var crystalRandom = [];
 
 var crystalNumber;
 
 function randomNum() {
 
-    targetNum = Math.floor(Math.random() * 100) + 1;
+    targetNum = Math.floor(Math.random() * 102) + 19;
 
     $("#targetNumber").text(targetNum);
 
     for(var i = 0; i < 4; i++) {
 
-        var randomCrystalNumber = Math.floor(Math.random() * 9) + 1;
+        var randomCrystalNumber = Math.floor(Math.random() * 12) + 1;
 
         crystalRandom.push(randomCrystalNumber);
 
