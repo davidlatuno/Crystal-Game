@@ -15,3 +15,18 @@
 #wins {
     color: forestgreen;
 }
+
+.container {
+
+    display: none;
+}
+
+.instructions {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.instructions p {
+    font-size: 20px;
+}

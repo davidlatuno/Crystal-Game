@@ -69,6 +69,13 @@ crystalValue();
 
 $(document).ready(function () {
 
+    // Start Screen
+    $("html").on("click", function() {
+
+        $(".instructions").empty();
+        $(".container").css("display", "block");
+    })
+
 
     // addes crystal values to user total
     $(".btn").on("click", function () {

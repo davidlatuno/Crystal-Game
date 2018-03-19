@@ -17,84 +17,97 @@
 
 <body>
 
+
+
     <div class="jumbotron text-center">
         <h1>Crystal Collector</h1>
     </div>
-
-    <!-- Row 1 -->
-    <div class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title text-center">Target Number:</h3>
-                </div>
-                <div class="panel-body text-center">
-                    <div id="targetNumber"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title text-center">Your Current Number:</h3>
-                </div>
-                <div class="panel-body text-center">
-                    <div id="userNumber">0</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-2"></div>
+    <div class="instructions">
+        <p>You Will be given a random target number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specifc amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the target number, you lose if your total score goes above the target
+            number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal</p>
+        <p>Click anywhere to start.</p>
     </div>
-
-    <!-- Row 2 -->
-    <div class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-md-4">
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                    <h3 class="panel-title text-center">Wins</h3>
-                </div>
-                <div class="panel-body text-center">
-                    <div id="wins">0</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-danger">
-                <div class="panel-heading">
-                    <h3 class="panel-title text-center">Losses:</h3>
-                </div>
-                <div class="panel-body text-center">
-                    <div id="lose">0</div>
+    <div class="container">
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Target Number:</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div id="targetNumber"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-xs-2"></div>
-    </div>
 
-    <!-- Row 3 -->
-
-    <div class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-md-8 text-center">
-            <button class="btn btn-primary blue">
-                <img class="image white" src="assets/images/whitecrystal.png" alt="white">
-            </button>
-            <button class="btn btn-success green">
-                <img class="image white" src="assets/images/whitecrystal.png" alt="white">
-            </button>
-            <button class="btn btn-danger red">
-                <img class="image white" src="assets/images/whitecrystal.png" alt="white">
-            </button>
-            <button class="btn btn-warning yellow">
-                <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Your Current Number:</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div id="userNumber">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
         </div>
-        <div class="col-xs-2"></div>
-        </button>
-    </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-md-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Wins</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div id="wins">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Losses:</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div id="lose">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+
+        <!-- Row 3 -->
+
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-md-8 text-center">
+                <button class="btn btn-primary blue">
+                    <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+                </button>
+                <button class="btn btn-success green">
+                    <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+                </button>
+                <button class="btn btn-danger red">
+                    <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+                </button>
+                <button class="btn btn-warning yellow">
+                    <img class="image white" src="assets/images/whitecrystal.png" alt="white">
+            </div>
+            <div class="col-xs-2"></div>
+            </button>
+        </div>
+        </div>
+
     </div>
 
 
