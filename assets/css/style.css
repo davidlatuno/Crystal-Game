@@ -1,3 +1,32 @@
+body {
+
+    background: url(../images/cave-background.jpg)
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {color:red;}
+    25%  {color:orange;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+
+}
+
+.jumbotron {
+    background: darkgray !important;
+}
+
 .image {
     width: 150px;
     height: auto;
@@ -29,4 +58,10 @@
 
 .instructions p {
     font-size: 20px;
+    color: white;
+}
+
+#startbutton {
+    font-size: 25px;
+    font-weight: bold;
 }
